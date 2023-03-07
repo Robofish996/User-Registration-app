@@ -74,20 +74,22 @@ function createUserEntry(firstName, lastName, username, email, password) {
 ---------------------------------------------------- */
 
 // Show register tab by default
-registerTab.style.display = "block";
-userTabs.style.display = "none";
+//registerTab.style.display = "block";
+//userTabs.style.display = "none";
 
 // Switch to user list tab
-usersTabButton.addEventListener("click", function() {
-  userTabs.style.display = "block";
-  registerTab.style.display = "none";
-});
+document.getElementById("register-tab-button").addEventListener("click", function () {
+  userTabs[0].style.display = "block";
+  registerTab[0].style.display = "none";
+  userTabs[1].style.display = "block";
+  registerTab[1].style.display = "none";
+})
 
 // Switch to register tab
-registerTabButton.addEventListener("click", function() {
-  registerTab.style.display = "block";
-  userTabs.style.display = "none";
-});
+//registerTabButton.addEventListener("click", function() {
+  //registerTab.style.display = "block";
+  //userTabs.style.display = "none";
+//});
 
 // Submit registration form
 registerForm.addEventListener("submit", function(event) {
