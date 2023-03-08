@@ -94,28 +94,6 @@ document.getElementById("users-tab-button").addEventListener("click", function (
 });
 
 
-
-
-
-
-// Switch to user list tab
-//document.getElementById("users-tab-button").addEventListener("click", function () {
-//  userTabs.item(0).style.display = "block";
-//  registerTab.item(0).style.display = "none";
-//});
-
-// Switch to register tab
-//document.getElementById("register-tab-button").addEventListener("click", function() {
-//  registerTab.item(0).style.display = "block";
-//  userTabs.item(0).style.display = "none";
-//});
-
-// Switch to register tab
-//registerTabButton.addEventListener("click", function() {
-//  registerTab[0].style.display = "block";
-//  userTabs[0].style.display = "none";
-//});
-
 // Submit registration form
 registerForm.addEventListener("submit", function(event) {
   // Prevent form from submitting
