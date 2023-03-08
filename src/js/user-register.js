@@ -5,12 +5,10 @@
 /* --- Tab References --- */
 
 // Get reference to all elements in register tab
-const registerTab = document.getElementsByClassName("register")[0];
-console.log(registerTab);
+const registerTab = document.getElementsByClassName("register");
 
 // Get reference to all elements in userList tab
-const userTabs = document.getElementsByClassName("users")[0];
-console.log(userTabs);
+const userTabs = document.getElementsByClassName("users");
 
 
 /* --- Nav references --- */
@@ -73,22 +71,49 @@ function createUserEntry(firstName, lastName, username, email, password) {
     Event Listeners and Interactivity
 ---------------------------------------------------- */
 
-// Show register tab by default
-//registerTab.style.display = "block";
-//userTabs.style.display = "none";
 
 // Switch to user list tab
+
 document.getElementById("register-tab-button").addEventListener("click", function () {
   userTabs[0].style.display = "block";
   registerTab[0].style.display = "none";
   userTabs[1].style.display = "block";
   registerTab[1].style.display = "none";
-})
+});
+
+
+
+// Switch to register tab
+
+
+document.getElementById("users-tab-button").addEventListener("click", function () {
+  userTabs[0].style.display = "none";
+  registerTab[0].style.display = "block";
+  userTabs[1].style.display = "none";
+  registerTab[1].style.display = "block";
+});
+
+
+
+
+
+
+// Switch to user list tab
+//document.getElementById("users-tab-button").addEventListener("click", function () {
+//  userTabs.item(0).style.display = "block";
+//  registerTab.item(0).style.display = "none";
+//});
+
+// Switch to register tab
+//document.getElementById("register-tab-button").addEventListener("click", function() {
+//  registerTab.item(0).style.display = "block";
+//  userTabs.item(0).style.display = "none";
+//});
 
 // Switch to register tab
 //registerTabButton.addEventListener("click", function() {
-  //registerTab.style.display = "block";
-  //userTabs.style.display = "none";
+//  registerTab[0].style.display = "block";
+//  userTabs[0].style.display = "none";
 //});
 
 // Submit registration form
